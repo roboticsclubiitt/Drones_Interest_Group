@@ -24,7 +24,8 @@ Welcome to the documentation of our hexacopter project. Our hexacopter, known as
 
 ## Procedure
 
-1. The hexacopter was assembled and configured with the following steps:
+The hexacopter was assembled and configured with the following steps:
+  
 1. Assembly of frame
 1. Soldering of ESCs and XT60 Connector of battery
 1. Installation of all components on frame (FC, Receiver, Motor, Telem, GPS, Buzzer, Safety Switch, Power Module, Battery, Voltage Tester)
@@ -43,3 +44,4 @@ Welcome to the documentation of our hexacopter project. Our hexacopter, known as
 1. Test flight
 1. Lift Off! v2
 
+### Assembly of Frame
