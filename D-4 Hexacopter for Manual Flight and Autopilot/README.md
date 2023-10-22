@@ -44,4 +44,6 @@ The hexacopter was assembled and configured with the following steps:
 1. Test flight
 1. Lift Off! v2
 
-### Assembly of Frame
+### Assembly of Frame  
+  
+The frame can be prebought on robu.in and it includes 6 arms, an upper plate and a lower plate. The lower plate has a built in power distributer soldered into it so you just need to solder on the battery and PCB on the plates as indicated, make sure of polarity.
