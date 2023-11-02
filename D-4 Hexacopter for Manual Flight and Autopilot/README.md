@@ -46,4 +46,8 @@ The hexacopter was assembled and configured with the following steps:
 
 ### Assembly of Frame  
   
-The frame can be prebought on robu.in and it includes 6 arms, an upper plate and a lower plate. The lower plate has a built in power distributer soldered into it so you just need to solder on the battery and PCB on the plates as indicated, make sure of polarity.
+The frame can be prebought on robu.in and it includes 6 arms, an upper plate and a lower plate. The lower plate has a built in power distributer soldered into it so you just need to solder on the battery and PCB on the plates as indicated, make sure of polarity.  
+  
+[Here is where you should solder. The plate has + and - indicators](https://imgur.com/a/LuGpqaD)  
+  
+Use M3 screws to join the arms of hexacopter to its plates, and M2 screws to join the motors to the arms. The BLDC motors have a [specific layout](https://cdn.shopify.com/s/files/1/2024/0305/files/A2212-980_03.jpg?v=1497237935) you need to screw the bolts in.
