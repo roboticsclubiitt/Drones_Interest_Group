@@ -30,7 +30,6 @@ The hexacopter was assembled and configured with the following steps:
 1. Soldering of ESCs and XT60 Connector of battery
 1. Installation of all components on frame (FC, Receiver, Motor, Telem, GPS, Buzzer, Safety Switch, Power Module, Battery, Voltage Tester)
 1. Connection of motors with ESC
-1. Wiring the components with FC
 1. Binding of receiver and controller
 1. Installation of MissionPlanner
 1. Connection of PixHawk with MissionPlanner (with USB or Telem)
@@ -58,4 +57,15 @@ Make sure to use plenty of solder because it gives the least contact resistance 
   
 ### Installation of all components on frame (FC, Receiver, Motor, Telemetry etc)  
   
-The FC must be in the center of the system. The forward arrow must point towards your forward position. If you have a [PPM](https://circuitglobe.com/difference-between-pam-pwm-and-ppm.html) receiver, it can be connected to the RCIN port of the port rail at the top. Signal PIN is at the bottom, voltage wires are at the top. This convention is the same for all connections to the ESC. The data-ground-voltage pins of the ESC are connected to the MAIN OUT 1-6 according to the layout you flash on the Pixhawk (more on that later). The GPS will be connected with [DF-13 pins](https://www.lambdrive.com/depot/Robotics/Controller/PixhawkFamily/Connector/). The GPS will connect to an I2C port (this is for voltage, as its a 2-wire-4-pin connection only). The data of the GPS is transferred through the GPS port of the Pixhawk with a 4-wire-6-pin connection. Buzzer and Safety Switch will be connected as per the notation on the Pixhawk. The Voltage Tester is basically a voltmeter which will directly connect to the battery with its data wires. It will tell the voltage of every cell of the battery.
+The FC must be in the center of the system. The forward arrow must point towards your forward position. If you have a [PPM](https://circuitglobe.com/difference-between-pam-pwm-and-ppm.html) receiver, it can be connected to the RCIN port of the port rail at the top. Signal PIN is at the bottom, voltage wires are at the top. This convention is the same for all connections to the ESC. The data-ground-voltage pins of the ESC are connected to the MAIN OUT 1-6 according to the layout you flash on the Pixhawk (more on that later). The GPS will be connected with [DF-13 pins](https://www.lambdrive.com/depot/Robotics/Controller/PixhawkFamily/Connector/). The GPS will connect to an I2C port (this is for voltage, as its a 2-wire-4-pin connection only). The data of the GPS is transferred through the GPS port of the Pixhawk with a 4-wire-6-pin connection. Buzzer and Safety Switch will be connected as per the notation on the Pixhawk. The Voltage Tester is basically a voltmeter which will directly connect to the battery with its data wires. It will tell the voltage of every cell of the battery.  
+
+### Connection of Motors with FC  
+
+When motors are screwed on the arms, the wires must be pointing inwards. The banana pin of the ESC can be connected in any order. Upon later testing if you find that the motor is spinning in the opposite direction than it should then you can switch direction of the outer 2 banana pins of the BLDC motor.  
+
+### Binding transmitter and receiver  
+
+Connect ESC data pins to CH1 of the transmitter. Connect the battery to the ESC. Now, short the transmitter by connecting the signal pin of the BAT channel to GND. This will put it in bind mode. After that, press and hold the BIND key on your transmitter. This will put the transmitter in bind mode too. Then it will bind to the closest receiver in bind mode.  
+
+### Installation of Mission Planner  
+
