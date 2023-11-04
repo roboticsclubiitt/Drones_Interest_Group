@@ -32,7 +32,6 @@ The hexacopter was assembled and configured with the following steps:
 1. Connection of motors with ESC
 1. Binding of receiver and controller
 1. Installation of MissionPlanner
-1. Connection of PixHawk with MissionPlanner (with USB or Telem)
 1. Flashing firmware
 1. Setup and Calibration of PixHawk via MissionPlanner
 1. Testing
@@ -69,3 +68,10 @@ Connect ESC data pins to CH1 of the transmitter. Connect the battery to the ESC.
 
 ### Installation of Mission Planner  
 
+If you are on Windows, Mission Planner is very easy to install from [here](https://ardupilot.org/planner/docs/mission-planner-installation.html)  
+If you are on Linux, Mission Planner can run from Mono (instructions given on the mission planner documentation), or you can use [QGroundControl](http://qgroundcontrol.com/)  
+
+### Flashing firmware on PixHawk  
+
+First you need to connect the PixHawk to MissionPlanner (MP) [using MAVLink Protocol via USB Cable](https://ardupilot.org/copter/_images/pixhawk_usb_connection.jpg)  
+Simply connect the micro USB to your PC and select the correct COM port and click connect. The rest will happen automatically. If you have any errors, refer to the Mission Planner Documentation.  
