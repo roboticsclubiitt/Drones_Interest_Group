@@ -75,3 +75,5 @@ If you are on Linux, Mission Planner can run from Mono (instructions given on th
 
 First you need to connect the PixHawk to MissionPlanner (MP) [using MAVLink Protocol via USB Cable](https://ardupilot.org/copter/_images/pixhawk_usb_connection.jpg)  
 Simply connect the micro USB to your PC and select the correct COM port and click connect. The rest will happen automatically. If you have any errors, refer to the Mission Planner Documentation.  
+[Here is what the Mission Planner screen should look like after connection](https://ardupilot.org/planner/docs/mission-planner-overview.html) To flash the neccessary firmware on your pixhawk first go on Setup -> Install Firmware.  
+Choose Hexacopter from the menu screen. Use the Pixhawk-1 board.  
