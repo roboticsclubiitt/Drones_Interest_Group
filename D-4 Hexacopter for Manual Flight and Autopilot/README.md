@@ -77,3 +77,22 @@ First you need to connect the PixHawk to MissionPlanner (MP) [using MAVLink Prot
 Simply connect the micro USB to your PC and select the correct COM port and click connect. The rest will happen automatically. If you have any errors, refer to the Mission Planner Documentation.  
 [Here is what the Mission Planner screen should look like after connection](https://ardupilot.org/planner/docs/mission-planner-overview.html) To flash the neccessary firmware on your pixhawk first go on Setup -> Install Firmware.  
 Choose Hexacopter from the menu screen. Use the Pixhawk-1 board.  
+
+### Setup and calibration of Pixhawk  
+  
+Go to the **setup** tab. click on "Mandatory Hardware". You need to follow the instructions given on the Mission Planner UI, alternatively you can follow the video linked here made by the Techmaniacs team. The setups you need are: accelerometer, compass, battery, radio, flight modes, motors, esc. There are some other setup and calibrations as well, which can easily be followed on [this website](https://george-hawkins.github.io/arf-drone/docs/pixhawk-setup).  
+  
+Tips:  
+1. If you can buy 433MHz radio telemetry then accel and compass calibration is a lot easier  
+1. For Hexacopter we are using the 10000 mAh 35c Orange Battery. The charge rating x c rating of the battery is its max optimum current output (ex: 10,000 * 35 = 350 mA). Make sure this is higher than the total current demanded by escs.  
+1. In radio calibrations, check if all the channels are working to your preference. Always push the sticks to their maximum value to set the correct min/max points  
+1. Usually, the modes Stabilize (Manual), Loiter (GPS- assisted stable flight) and Auto (programmed flight mode) are put.  
+1. Motors can take a while to set up, if they are acting up in the motor test then try to replace/recalibrate them. If you are having too many issues then contact the club.  
+  
+### Testing   
+   
+The Stabilize and Loiter modes must be tested manually. Auto mode can be tested by uploading a custom flight path and seeing how it follows that path.  
+  
+#### Stabilize  
+  
+1. Arm the drone by moving the throttle stick down and right.
