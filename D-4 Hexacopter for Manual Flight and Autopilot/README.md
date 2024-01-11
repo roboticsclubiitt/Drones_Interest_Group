@@ -89,10 +89,30 @@ Tips:
 1. Usually, the modes Stabilize (Manual), Loiter (GPS- assisted stable flight) and Auto (programmed flight mode) are put.  
 1. Motors can take a while to set up, if they are acting up in the motor test then try to replace/recalibrate them. If you are having too many issues then contact the club.  
   
+Here are some videos to help:  
+1. [Loading Firmware](https://drive.google.com/file/d/1tkC9xu2rq5P5uMSHTJJpcLtjN3YlWZqm/view?usp=drive_link)  
+1. [Acceleration Calibration](https://drive.google.com/file/d/1dMRHs9OxpNX8nZRfqG4Pr-94_BGuvyis/view?usp=drive_link)  
+1. [Compass Calibration](https://drive.google.com/file/d/1OHofWVJugcSTIvYxe1xmSL4FSvQT5UX-/view?usp=drive_link)
+1. [Radio calibration](https://drive.google.com/file/d/1nvhGLdIiS273es1NOmGbTZt9S1Cg70QQ/view?usp=drive_link)
+1. [Motor Test](https://drive.google.com/file/d/1yEVil0lTvRaCfc6eVQNDdxCvhjUP6esX/view?usp=drive_link)  
+1. [ESC Calibration](https://drive.google.com/file/d/10Asm9Zohenm_TqoBq88DooqRjY5BS_7P/view?usp=drive_link)  
+1. [Final Check](https://drive.google.com/file/d/12Awy3K_IShCmI1_yHmOxF_lt7djYtKKd/view?usp=drive_link)
+  
 ### Testing   
    
 The Stabilize and Loiter modes must be tested manually. Auto mode can be tested by uploading a custom flight path and seeing how it follows that path.  
   
-#### Stabilize  
+#### 1) Stabilize  
   
-1. Arm the drone by moving the throttle stick down and right.
+We need to test if the tilt is happening in the same direction as your intention and to the scale neccessary. If any movement is happening in the opposite direction to your intented direction of stick movement then change the RCX_REVERSED parameter by using the Config tab. 
+
+1. Arm the drone by moving the throttle stick down and right.  
+1. Hold the drone over your head.  
+1. Move the pitch stick forward. If you feel a force forward, then the motors are calibrated in the correct direction. If not, then change the RCX_REVERSED parameter. Do the same for the back direction  
+1. Move the roll stick leftwards. If you feel a force leftwards, then the motors are calibrated in the correct direction. Do the same for the right direction.  
+1. Move the yaw stick leftwards. If you feel a torque leftwards, then the motors are calibrated in the correct direction. Do the same for the right direction.  
+1. Get a feel for the throttle by changing the throttle mode while someone is holding onto the drone. Don't worry as long as you don't hold it to your head the drone can not lift anyone up. Refer to the documentation of your motors to see how much payload the drone can lift. The payload to drone weight ratio is usually near 2:1  
+  
+### 2) Loiter  
+  
+Loiter is a very useful mode as the drone uses GPS assist to stay stable in exactly one place. We can save a drone from a crash by putting it in loiter and it will stay stable.
