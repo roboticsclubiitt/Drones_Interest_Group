@@ -22,5 +22,5 @@ To become a member, simply join our whatsapp community [here](https://chat.whats
 ## Socials  
 
 - Website: [techmaniacs_iitt](https://techclubsiitt.netlify.app/techmaniacs)
-- Instagram: <placeholder>
+- Instagram: https://www.instagram.com/techmaniacs_iitt/
 - Linkedin: https://in.linkedin.com/company/techmaniacs-iitt
