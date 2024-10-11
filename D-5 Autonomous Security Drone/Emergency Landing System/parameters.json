@@ -1,0 +1,17 @@
+{
+   
+           
+            "NumDisparities"   : 128,
+            "BlockSize"        : 5,
+            "UniquenessRatio"  : 5,
+            "TextureThreshold" :210,
+            "PreFilterCap"     :63,
+            "PreFilterSize"    :55, 
+            "PreFilterType"    : 1,
+            "Radius"           :1,
+            "Threshold"        : 5
+            
+            
+     
+            
+}
